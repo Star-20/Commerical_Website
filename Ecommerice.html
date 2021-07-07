@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumtySmasy</title>
+    <link rel="stylesheet"   href="Ecommerice.css" />
+
+    <!--Add the link for for star css-->
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <!--Home page catagories-->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" width="200px" />
+          </div>
+          <nav>
+            <ul  id="MenuItems">  <!--I add this MenuItems for the responsive reason-->
+              <li><a href="">Home</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Account</a></li>
+            </ul>
+          </nav>
+          
+          <img src="./images/shopping-cart-icon.jpg" width="50px" />
+          <!--this is for cart icon-->
+
+          <img src="./images/menu.png" class="menu-icon"  onclick="menutoggle()"> 
+          <!--to make it respnisive in smaller screens-->
+        </div>
+        <div class="row">
+          <div class="col-new">
+            <h1 class="h1">
+              All New Styles <br />
+              More to Shop!
+            </h1>
+            <!-- <p>
+              in CSS selector and their differences. Before starting, <br />let
+              us take a sample code to understand the signs.
+            </p> -->
+            <a href="" class="btn">Explore Now &#8594;</a>
+            <!--Arrow Icon-->
+          </div>
+          <div class="col-new">
+            <img src="./images/w-summersets-1-.webp" width="700px" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Featured catagories-->
+    <div class="categories">
+  <div class="new-container"> 
+        <div class="row">
+          <div class="col-star">
+            <img src="./images/men_suittop.png" />
+          </div>
+          <div class="col-star">
+            <img src="./images/junior_women.png" />
+          </div>
+          <div class="col-star">
+            <img src="./images/women_top_1.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--featured products-->
+    <div class="new-container">
+      <h2 class="title">Featured Products</h2>
+
+      <div class="row">
+        <div class="col-cloth">
+          <img src="./images/Women_dress1.png" width="200px" />
+          <!--I added the width cuz the images is too big-->
+          <h4>Premier Amour Long Sleeve Floral Fit & Flare Dress</h4>
+          <div class="rating">
+            <!--search for the number 3 link. to use for this plz serach "font Awesome 4 cdn".
+            copied the font awesom css url. aFter that serach for Font awesome icon under "font awesome 4 iconn"-->
+
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p >$50.00</p>
+        </div>
+        <div class="col-cloth">
+          <img src="./images/women_suit.png" width="200px" />
+          <!--I added the width cuz the images is too big-->
+          <h4>Le Suit Pant Suit</h4>
+          <div class="rating">
+          
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$65.00</p>
+        </div>
+        <div class="col-cloth">
+          <img src="./images/men_top.png" width="200px" />
+          <!--I added the width cuz the images is too big-->
+          <h4>U.S. Polo Assn. Mens Classic Ultimate Short Sleeve Polo Shirt</h4>
+          <div class="rating">
+          
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$15.00</p>
+        </div>
+        <div class="col-cloth">
+          <img src="./images/men_shirt.png" width="200px" />
+          <!--I added the width cuz the images is too big-->
+          <h4>sen Lux Sateen Stretch Long Sleeve Dress Shirt</h4>
+          <div class="rating">
+          
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$35.00</p>
+        </div>
+      </div>
+      <h2 class="title">New Arrivals</h2>
+      <div class="row">
+        <div class="col-cloth">
+          <img src="./images/Women_Junior1.png" width="200px" />
+          <!--I added the width cuz the images is too big-->
+          <h4>Arizona Womens High Rise Skinny Jeggings</h4>
+          <div class="rating">
+          
+
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$25.00</p>
+        </div>
+        <div class="col-cloth">
+          <img src="./images/women_top1.png" width="200px" />
+          <!--I added the width cuz the images is too big-->
+          <h4>Bold Elements Womens V Neck Sleeveless Tank Top</h4>
+          <div class="rating">
+          
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$20.00</p>
+        </div>
+        <div class="col-cloth">
+          <img src="./images/men_suittop2.png" width="200px" />
+          <!--I added the width cuz the images is too big-->
+          <h4>Stafford Linen Cotton Mens Classic Fit Sport Coat</h4>
+          <div class="rating">
+          
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$40.00</p>
+        </div>
+        <div class="col-cloth">
+          <img src="./images/men_hoodie.png" width="200px" />
+          <!--I added the width cuz the images is too big-->
+          <h4>The Track Hoodie</h4>
+
+          <div class="rating">
+          
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$32.00</p>
+        </div>
+        <div class="row">
+          <div class="col-cloth">
+            <img src="./images/mens_workout.png" width="200px" />
+            <!--I added the width cuz the images is too big-->
+            <h4>Men's Essentials 3-Stripes Tapered Tricot Joggers</h4>
+            <div class="rating">
+            
+
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>$55.00</p>
+          </div>
+          <div class="col-cloth">
+            <img src="./images/junior_scoopy.png" width="200px" />
+            <!--I added the width cuz the images is too big-->
+            <h4>Junior scoopy</h4>
+            <div class="rating">
+            
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>$23.00</p>
+          </div>
+          <div class="col-cloth">
+            <img src="./images/men-short.png" width="200px" />
+            <!--I added the width cuz the images is too big-->
+            <h4>Flexwear Ripstop Cargo Short</h4>
+            <div class="rating">
+            
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>$30.00</p>
+          </div>
+          <div class="col-cloth">
+            <img src="./images/women_jN1.png" width="200px" />
+            <!--I added the width cuz the images is too big-->
+            <h4>a.n.a Womens High Rise Ripped Jegging</h4>
+            <div class="rating">
+            
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$40.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--offer-->
+    <div class="offer">
+      <div class="new-container">
+        <div class="row">
+          <div class="col-new">
+            <img class="offer-img" src="./images/fashion.png"> 
+          </div>
+          <div class="col-new">
+            <p>Enjoy 20% Exclusive Off</p>
+            <h1>Find Your Style</h1>
+            <small>If you're looking for high quility, All-American weekens adn work wear styles fro men , women and Junior, we are here for you.
+        </small>
+          <br/>
+          <a href="" class="btn" >Buy Now  &#8594</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonial -->
+    <div class="testimonial">
+      <div class="new-container">
+        <div class="row">
+          <div class="col-star">
+            <i class="fa fa-quote-left"></i>
+            <p>
+             Love it! Loose fitting and love the colors and design on the dress. Great summer dress!
+            </p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+          </div>
+        <img  src="./images/user-1.png"/>  <!--lets add users images -->
+        <h3>Mary </h3>   <!--lets add their name-->
+          </div>
+          <div class="col-star">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Although jeans are usually being cut & sewn on far Eastern places, the quality of the product is good. The fit is tight but not too tight.
+            </p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+          </div>
+        <img  src="./images/user-2.png"/>  <!--lets add users images -->
+        <h3>David J.</h3>   <!--lets add their name-->
+        </div>
+          <div class="col-star">
+            <i class="fa fa-quote-left"></i>
+            <p>
+             It's beautiful, fun and so colorful. The fit was perfect and just felt so pretty!
+            </p>
+            <div class="rating">
+          
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+          </div>
+        <img src="./images/user-3.png"/>  <!--lets add users images -->
+        <h3>Linda Mark</h3>   <!--lets add their name-->
+        </div>
+        <div>
+      </div>
+      </div>
+      <!---brands-->
+      <div class="brand">
+        <div class="new-container">
+          <div  class="row">
+            <div class="col-5">
+              <img src="./images/bank.png">
+            </div>
+            
+            <div class="col-5">
+              <img src="./images/brandcom.png">
+            </div>
+            <div class="col-5">
+              <img src="./images/logo-philips.png">
+            </div>
+            <div class="col-5">
+              <img src="./images/logo-paypal.png">
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <div class="app-logo">
+                <img src="./images/app-store.png">
+                <img src="./images/play-store.png">
+
+              </div>
+            </div>
+            
+            
+            <div class="footer-col-new">
+              <img src="./images/logo.png">
+              <p>Our purpose is to server you </p>
+            </div>
+            <div class="footer-col-star">
+              <h3>Customer Service</h3>
+              <ul>
+                
+                <li>Contact Us</li>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+              </ul>
+            </div>
+
+           
+            <div class="footer-col-star">
+              <h3>Store Locator</h3>
+              <ul>
+                <li>Find Store</li>
+              <li>Track my order</li>
+              <li>Gift Card</li>
+             
+              </ul>
+            </div>
+
+          
+
+            <div class="footer-col-cloth">
+              <h3 class="demo">Stay Connected</h3>
+              <ul class="socialmedia"> 
+              <li>facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+              <li>Pinterest</li>
+              <li>Tiktok</li> 
+             </ul>
+          
+          </div>
+          <hr>
+          <p  class="copyright">Hamty Smasy 2021 All rights reserved</p>
+        </div>
+      </div>
+
+      <!-- javascript (js) for toggle menus (to the responisve part of the menu) -->
+      <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.sytle.maxHeight = "0px";
+        
+        function menutoggle(){
+
+          if(MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight ="200px";/*meaning if the MneuItems height= 0px style then we will change it to 200px, else we will keep the 0px as it is . then if it is >=800px
+            our screen, then when we click at the menu it will make them disaper and apper again.
+            meaning it will hide and show the gray background colors*/ 
+          } else{
+            MenuItems.style.maxHeight ="0px";
+          }
+
+        }
+      </script>
+
+  </body>
+</html>
+
+
