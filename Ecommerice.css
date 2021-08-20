@@ -1,0 +1,740 @@
+/* Gooogle Font =using Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+
+.header{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.h1{
+    font-size:40px;
+    font-weight:bolder;
+    color:rgb(32, 25, 25);
+   
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    padding:20px;
+}
+nav{
+    flex:1;
+    text-align:right;
+}
+nav > ul{
+    display:inline-block;
+    list-style-type:none;
+ 
+
+}
+nav > ul > li{
+    display:inline-block;
+    margin-right:20px;
+ 
+
+}
+
+a{
+    text-decoration:none;
+        color:rgb(212, 42, 42);
+        
+        
+
+}
+
+.logo img{
+    display:inline-block;
+}
+p{
+    color:BLACK;
+}
+
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding-left:25px;
+    padding-right:25px;
+
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.col-new{
+    flex-basis:50%;
+    min-width:300px;
+
+}
+
+.col-new > img{
+    max-width:100%;
+    padding:50px 0;
+     
+}
+
+
+.col-new > h1{
+    font-size:50px;
+    line-height:60px;
+    margin:25px 0;
+}
+
+.btn{
+color:white;
+background:cornflowerblue;
+display:inline-block;
+padding:8px 30px;
+margin:30px 0;
+border-radius:30px;
+transition:background 0.5s;
+}
+
+.btn:hover{
+    background:rgb(211, 49, 49);
+
+}
+
+.header{
+    background:radial-gradient(#fff,rgb(218, 168, 168))  /*this will create a transition b/n 2 colors for the images */
+}
+/*lets search for html icon arrow. we will find under w3school.com >> Arrow Icons */
+
+
+/*to add the font style to your html, I got it from the font.google.com */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*to add space from top to bottom */
+.header > .row{
+margin-top:70px;
+}
+
+.categories{
+    margin:70px 0;
+
+}
+
+.col-star{
+    flex-basis:30%;
+    min-width:250px;
+    margin-bottom:30px ;
+}
+.col-star > img{
+    width:100%;
+}
+
+.new-container{
+    max-width:1080px;
+    margin:auto;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.col-cloth{
+    flex-basis:25%;  /*cuz  I will add 4 items */
+    padding:10px;
+    min-width:200px;
+    margin-bottom:50px;
+    transition:transform 0.5s;
+}
+
+.col-cloth > img{
+    width:100%;
+    box-shadow:0 0 1px 0px rgba(0,0,0,0.2);
+    
+    
+}
+
+.title{
+    text-align:center;
+    margin:0 auto 80px;
+    position:relative;
+    line-height:60px;
+    color:rgb(124, 12, 12);
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif
+}
+
+.title:hover{
+    color:rgb(212, 42, 42);
+    cursor:pointer;
+    transition:transform 0.5s;
+    transform:rotateY(360deg);
+}
+.title::after{
+    content:'';
+    background:rgb(218, 168, 168);
+    width:80px;
+    height:5px;
+    border-radius:5px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+h4{
+    color:royalblue;
+    font-weight:normal;
+
+}
+
+.col-cloth > p{
+    font-size:14px;
+    color:rgb(235, 37, 37);
+    font-weight:bold;
+}
+
+/* this is for the color of the star for rating */
+.rating .fa{
+    color:darkorange;
+}
+
+.col-cloth:hover{
+    transform:translateY(-7px);
+}
+/* ---Offer---- */
+.offer{
+  background:radial-gradient(#fff,rgb(218, 168, 168));
+  margin-top:50px;
+  padding:30px 0;
+    
+
+
+}
+
+
+.col-new .offer-img{
+    padding:80px;
+    transition:transform 0.5s;
+
+
+}
+
+.offer-img:hover{
+    transform:translateY(-10px);
+     
+     cursor:pointer;
+}
+
+small{
+    color:black;
+    font-weight:bold;
+}
+
+.col-new p{
+    font-size:40px;
+    color:rgb(98, 98, 240);
+    font-weight: bold;
+     
+    
+}
+.col-new h1{
+    font-size:35px;
+    font-family:'Times New Roman', Times, serif
+    
+
+
+}
+
+/* --testimonial-- */
+
+.testimonial{
+    padding-top:80px;
+
+}
+
+.testimonial .col-star{
+    text-align:center;
+    padding:30px 20px;
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.1);
+    cursor:pointer;
+    transition:transform 0.5s;
+}
+
+.testimonial .col-star img{
+   
+    margin-top:20px;
+    width:50px;
+    border-radius:50%;
+
+}
+
+.testimonial .col-star:hover{
+    transform:translateY(-10px);
+}
+
+.fa.fa-quote-left{
+    font-size:30px;
+    color:tomato;
+}
+
+.col-star p{
+    font-size:12px;
+    margin:12px 0;
+    color:lightslategray;
+
+}
+
+.testimonial .col-star h3{
+    font-weight:600;
+    color:rgb(20, 15, 15);
+    font-size:16px;
+}
+
+/* --Brands */
+
+.brands{
+    margin:100px auto;
+}
+
+.col-5{
+    width:160px;
+}
+
+.col-5 > img{
+    width:100%;
+    cursor:pointer;
+    filter:grayscale(100%);  /*it will make the logo color gray*/
+
+}
+
+.col-5 > img:hover{
+    filter:grayscale(0);  /*once we hover it , we will see the logo orginal color */
+}
+    
+/* --footer */
+
+
+    .footer{
+        background:rgba(128, 123, 122, 0.5);
+        color:black;
+        font-size:14px;
+        padding:60px 0 20px;
+        border-radius:3%;
+        
+    }
+    .footer:hover{
+        background-color:rgb(189, 166, 166);
+    }
+
+    .footer  p{
+        color:black;
+        
+    }
+
+    .footer h3{
+
+        color:black;
+        margin-bottom:20px;
+       
+    }
+/* --this will edit the all 4 lists at the same times */
+    .footer-col-1,.footer-col-new,.footer-col-star,.footer-col-cloth{
+        min-width:250px;
+        margin-bottom:30px;
+      
+    }
+
+    .footer-col-1{
+        margin-left:20px; 
+        flex-basis:30%;
+    }
+    .footer-col-new p{
+        color:black;
+        font-size:17px;
+        font-weight:bold;}
+        
+    .footer-col-new{
+       flex:1;  /*it will take the remaining space */
+        text-align:center;
+    }
+    .footer-col-new img{
+        width:180px;
+        margin-bottom:20px;
+    }
+
+    .footer-col-star, .footer-col-cloth{
+        flex-basis:12%;
+        text-align:center;
+    }
+
+    ul{
+        list-style-type:none;
+        color:black;
+        font-size:16px;
+        font-weight:bold;
+      
+        
+    }
+
+    .socialmedia{
+        display:block;
+        /* margin-left:70px; */
+    }
+    .demo{
+      /* text-align:right; */
+      font-weight:bolder;
+
+
+    }
+
+
+    .app-logo{
+        margin-top:20px;
+
+    }
+
+    .app-logo img{
+        width:140px;
+    }
+
+    .footer hr{
+        border:none;
+        background:black;
+        height:1px;
+        margin:20px 0;
+       
+
+    }
+
+    .copyright{
+        text-align:center;
+        color:black;
+        font-weight:bold;
+        font-size:16px;
+        margin-top:30px;
+        margin-right:180px; 
+    margin-left:180px;
+    }
+    
+    .menu-icon{
+        width:28px;
+        margin-left:20px;
+        display:none; /*it will hidden for any large regulare screen greater s800px*/
+
+    }
+
+    /* for the product Details property page */
+    /* all products page */
+    .row-2{
+justify-content:space-between;
+margin:100px auto 50px;
+    }
+
+    select{
+        border:1px solid rgb(175, 107, 107);
+        padding:5px;
+    }
+
+    /*I add the outline to none cuz once i select any sort,the border changed to the black.
+    to avoid that I wrote teh select:focus property so that the border of the sort will remain its own color */
+    select:focus{
+        outline:none;
+ }  
+
+ .page-btn{
+     margin:0 auto 80px;
+
+ }
+ .page-btn span{
+     display:inline-block;
+     border:1px solid blue;
+     margin-left:10px;
+     width:40px;
+     height:40px;
+     text-align:center;
+     line-height:40px;
+     cursor:pointer;
+ }
+
+ .page-btn span:hover{
+     background:cornflowerblue;
+     color:white;
+ }
+
+ /* --Single Product Details */
+.single-product{
+    margin-top:80px;
+    
+}
+
+.single-product .col-new img{
+    padding:0;
+
+}
+
+.single-product .col-new{
+    padding:20px;
+    
+}
+
+.single-product h4{
+    margin:20px;
+    font-size:20px;
+    font-weight:bold;
+    color:red;
+    
+}
+
+.single-product select{
+    display:block;
+    padding:10px;
+    margin-top:10px;
+}
+.single-product input{
+    width:50px;
+    height:40px;
+    padding-left:10px;
+    font-size:20px;
+    margin-right:10px;
+    border:1px solid rgb(175, 107, 107);;
+}
+
+input:focus{
+    outline:none;  /*the border color remains the same after we click it */
+
+}
+
+.single-product .fa{
+    color:gold;
+    margin-right:10px;
+}
+
+.small-img-row{
+    display:flex;
+    justify-content:space-between;
+
+}
+.small-img-col{
+    flex-basis:30%;
+    cursor:pointer;
+
+}
+
+/* --Cart items */
+
+.cart-page{
+    margin:80px auto;
+
+}
+table{
+   width:100%;
+   border-collapse:collapse; 
+}
+
+.cart-info{
+    display:flex;
+    flex-wrap:wrap;
+}
+th{
+    text-align:left;
+    padding:5px;
+    color:white;
+    background:#e75e4c;
+    font-weight:normal;
+}
+/* td=table data */
+td{
+    padding:10px 5px;
+
+}
+
+td input{
+    width:40px;
+    height:30px;
+    padding:5px;
+
+}
+
+td a{
+    color:#e75e4c;
+    font-size:15px;
+}
+
+td img{
+    width:80px;
+    height:80px;
+    margin-right:10px;
+}
+
+/* ---Total price/tax  */
+
+.total-price{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.total-price table{
+    border-top:3px solid #e75e4c;
+    width:100%;
+    max-width:400px;
+
+}
+
+td:last-child{
+    text-align:right;  /* this is forthe prices */
+}
+
+th:last-child{
+        text-align:right;
+}
+
+/* --For the Product color selection (ProductDetails_coloroption.html) */
+.color>h3{
+    font-size:25px;
+    margin-left:0;
+    color:gray;
+}
+
+.color{
+    margin-left:25px;
+    margin-top:25px;
+    display:flex;
+}
+
+.color div{
+    height:20px;
+    width:20px;
+    border:1px solid black;
+    top:5px;
+    left:5px;
+    position:relative;
+    border-radius:50%;
+    margin:0 15px;
+    cursor:pointer;
+    transition:0.3s ease;
+    
+
+}
+
+.color div:hover{
+    transform:scale(1.3s);
+}
+.color #yellow{
+    background:yellow;
+
+}
+
+.color #black{
+    background:black;
+
+}
+
+.color #pink{
+    background:pink;
+
+}
+
+.color #blue{
+    background:blue;
+
+}
+
+
+/* ----------------------------------------------------------------- */
+/* -----Responsiviness */
+ /* -----Responsivness with Media Query */
+
+    /* --Media query for menu  */
+/* this will apply to the navbar(home,product,about,contact,account) 
+and once it reach the 800px,the color changed to light blue. */
+    @media only screen and (max-width:800px){
+        nav ul{
+            position:absolute;
+            top: 60px;
+            left:0;
+            /* background:rgb(68, 64, 64); */
+            width:100%;
+            overflow:hidden;  
+            /* /*it will hide the list once we click the menu we will see then >800px sreen*/
+            transition:max-height 0.5s; 
+            margin-top:70px;
+
+        }
+        
+
+        nav ul li{
+            display:block;
+            margin-right:50px;
+            margin-bottom:10px;
+            
+              
+        }
+
+        nav ul li a {
+            /* color:White; */
+            color:royalblue;
+            
+        }
+        
+        .menu-icon{
+            display:block; /*it will be shown for screen >=800px */
+            cursor:pointer;
+        
+          
+
+        }
+    }
+
+
+    /*   --Media query for less than 600 screen size (like mobile)*/
+
+    @media only screen and (max-width:600px){
+
+        .row{
+    align-items:center;
+    }
+
+    /* it will make the screen like for mobile and every thing will go one by one to below */
+    .col-new, .col-star, .col-cloth{
+        flex-basis:100%;
+
+    }
+    /* --Meida Query for responsivness for the Singl Product (productdDetails.html)
+    this will make the image equaly space from right and left on mobil screen-- */
+    .single-product .row{
+        text-align:left;
+    }
+
+    .single-product .col-new{
+        padding:20px 0;
+
+    }
+
+    .single-product h1{
+        font-size:25px;
+        line-height:30px;
+
+    }
+
+    /* for product cart , espcally for the cart-info. cuz the product name,price and remove comes
+    below the image. so we want to remove the name and price & remove link will be dislpay 
+    it to be next to the image.  */
+    .cart-info p{
+    display:none; 
+
+    }
+
+    }
+
+
+  
